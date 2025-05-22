@@ -32,11 +32,16 @@ We used the **[Amazon Electronics Ratings Dataset](https://www.kaggle.com/datase
 - **Categories:** Phones, Laptops, Headphones, Smartwatches, TVs  
 
 ### 🔍 **Sample Data Structure**  
-```csv
-user_id,product_id,rating,votes,verified
-A3J5NK3P63DA5H,B000F2JUOK,5,2,True
-A1O5IAK93ZYX7U,B001E1FOS6,4,3,False
-A2TV0D2LW5ZL6J,B002GJVD6A,1,1,True
+import pandas as pd
+
+# Sample dataset creation
+data = {
+    "user_id": ["A3J5NK3P63DA5H", "A1O5IAK93ZYX7U", "A2TV0D2LW5ZL6J"],
+    "product_id": ["B000F2JUOK", "B001E1FOS6", "B002GJVD6A"],
+    "rating": [5, 4, 1],
+    "votes": [2, 3, 1],
+    "verified": [True, False, True]
+}
 
 * *Cleaning and handling missing values*: We'll handle missing values and clean the data to ensure it's consistent and reliable.
 * *Feature selection and engineering*: We'll select relevant features and engineer new ones to improve the model's performance.
