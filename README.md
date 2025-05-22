@@ -18,25 +18,25 @@ In this project, we develop a product recommendation system that suggests produc
 
 ## Data Collection & Preprocessing
 
-### Dataset Source
-We used the **[Amazon Product Dataset](https://www.kaggle.com/datasets/karkavelrajaj/amazon-products-dataset)** from Kaggle, which contains:
-- 2,000+ products across multiple categories
-- Product titles, descriptions, and features
-- Price information and ratings
-- Customer reviews and review scores
-**[Amazon Product Dataset from Kaggle](https://www.kaggle.com/datasets/karkavelrajaj/amazon-products-dataset)**:
+## 📁 Dataset Source  
 
-### Data Collection Details
-* **Dataset Characteristics**:
-  - Format: CSV files
-  - Size: 45MB (compressed)
-  - Time Period: 2020-2022 products
-  - Categories: Electronics, Home, Kitchen, Books
+We used the **[Amazon Electronics Ratings Dataset](https://www.kaggle.com/datasets/goncalo179/amazon-electronics-ratings/data)** from Kaggle, which contains:  
+- **315,000+ user reviews** specifically for **electronic products**  
+- **Detailed ratings** (1-5 stars) across multiple brands  
+- **Customer reviews** highlighting quality, usability, and satisfaction  
 
-* **Sample Data Structure**:
-  ```csv
-  asin,title,description,price,brand,category,rating,review_count
-  B08N5KWB9H,Amazon Echo Dot,Smart speaker with Alexa...,49.99,Amazon,Electronics,4.7,124568
+### 📊 **Dataset Details**  
+- **Format:** CSV files  
+- **Size:** 200MB (compressed)  
+- **Time Period:** Covers electronics ratings from **2008-2021**  
+- **Categories:** Phones, Laptops, Headphones, Smartwatches, TVs  
+
+### 🔍 **Sample Data Structure**  
+```csv
+user_id,product_id,rating,votes,verified
+A3J5NK3P63DA5H,B000F2JUOK,5,2,True
+A1O5IAK93ZYX7U,B001E1FOS6,4,3,False
+A2TV0D2LW5ZL6J,B002GJVD6A,1,1,True
 
 * *Cleaning and handling missing values*: We'll handle missing values and clean the data to ensure it's consistent and reliable.
 * *Feature selection and engineering*: We'll select relevant features and engineer new ones to improve the model's performance.
